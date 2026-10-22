@@ -1,0 +1,40 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Model Weights & Checkpoints (DO NOT COMMIT)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+*.onnx
+
+# Project Experiment Artifacts
+experiments/*/stage*/checkpoints/
+experiments/*/stage*/adapter/
+experiments/*/stage*/merged_model/
+experiments/*/stage*/export/*.gguf
+
+# Logs & System
+*.log
+.DS_Store
+wandb/
+
+# External tools & submodules
+tools/
+
+# Excluded scratchpad notebooks
+notebooks/*wikitext*
+
+# Editor settings
+.vscode/
